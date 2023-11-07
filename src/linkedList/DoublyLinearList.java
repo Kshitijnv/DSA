@@ -120,7 +120,7 @@ public class DoublyLinearList {
 	}
 
 	void displayForward() {
-		if (head == null)
+		if (isEmpty())
 			throw new RuntimeException("List is empty!!!");
 		Node trav = head;
 		do {
@@ -130,7 +130,7 @@ public class DoublyLinearList {
 	}
 
 	void displayReverse() {
-		if (head == null)
+		if (isEmpty())
 			throw new RuntimeException("List is empty!!!");
 		Node trav = head;
 		while (trav.next != null) {
@@ -141,7 +141,9 @@ public class DoublyLinearList {
 			trav = trav.prev;
 		} while (trav != null);
 	}
-
+	 boolean isEmpty() {
+		return head==null;
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		DoublyLinearList list = new DoublyLinearList();
