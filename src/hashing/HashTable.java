@@ -32,7 +32,8 @@ public class HashTable {
 		// Creating the table with the specified(SLOTS) size
 		table = new LinkedList[SLOTS];
 		for (int i = 0; i < SLOTS; i++) {
-			table[i] = new LinkedList<HashTable.Pair>();
+			//To initialize the linkedList pairs
+			table[i] = new LinkedList<Pair>();
 		}
 	}
 

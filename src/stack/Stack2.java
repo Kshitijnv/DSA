@@ -62,7 +62,7 @@ public class Stack2 {
 
 	private boolean isFull() {
 		return top == arr.length - 1;
-	}
+	}	
 
 	private void peek() {
 		if (isEmpty())
