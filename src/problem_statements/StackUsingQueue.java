@@ -60,11 +60,4 @@ public class StackUsingQueue {
 		}
 			
 	}
-	static void push(int value) {
-		
-	}
-	static void pop() {
-		
-	}
-
 }
