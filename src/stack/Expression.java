@@ -29,6 +29,7 @@ public class Expression {
 			else if (sym == ')') {
 				while (myStack.peek() != '(')
 					postfix.append(myStack.pop());
+				//to pop that Last '(' 
 				myStack.pop();
 			}
 			// 3. if operator found, push to stack
