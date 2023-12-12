@@ -61,6 +61,7 @@ public class SinglyLinkedList {
 						break;
 
 					default:
+						System.out.println("Invalid option");
 						break;
 					}
 				} catch (Exception e) {
@@ -105,11 +106,14 @@ public class SinglyLinkedList {
 			while(trav!=null) {
 				if((trav.data==val)&&(trav==head)) {
 					head = head.next;
+					
 				}
 				else if(trav.data==val) {
 					temp.next = trav.next;
+				}else {
+			// If the current element is not the one to be removed, update the temp pointer
+					temp = trav;
 				}
-				temp = trav;
 				trav = trav.next;	
 			}
 			System.out.println("Removed all occurence of "+val+" Successfully");
